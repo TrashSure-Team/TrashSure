@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/R_elementGroup1"
+        />
+
+    <ImageView
+        android:id="@+id/btnBackRegister"
+        android:layout_width="39dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="140dp"
+        android:layout_toStartOf="@+id/R_elementGroup1"
+        android:src="@drawable/icon_back" />
+
+    <ImageView
+        android:id="@+id/img_register"
+        android:layout_width="214dp"
+        android:layout_height="203dp"
+        android:layout_below="@+id/R_elementGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+
+        android:src="@drawable/img_register" />
+
+    <TextView
+        android:id="@+id/R_text1"
+        android:layout_width="213dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/img_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:paddingTop="1dp"
+        android:text="@string/welcome_trasher"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/R_text2"
+        android:layout_width="213dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/R_text1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/invitation"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/R_elementGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-27dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/group2" />
+
+    <LinearLayout
+        android:id="@+id/R.Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/R_text2"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/R.txtname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_shape"
+            android:hint="@string/enter_your_email"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingStart="20dp"
+            android:textSize="15sp"
+            android:backgroundTint="@color/white"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/R.txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_shape"
+            android:hint="@string/create_your_pasword"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingStart="20dp"
+            android:textSize="15sp"
+            android:backgroundTint="@color/white"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/R.buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_below="@+id/R.Linear"
+        android:background="@drawable/btn_shape"
+        android:width="300dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/R.linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/R.buttonRegister"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:paddingStart="5dp"
+            android:textColor="@color/secondaryColor"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+</RelativeLayout>

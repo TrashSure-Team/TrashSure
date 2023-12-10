@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WelcomeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/elementGroup1"
+     />
+
+
+    <ImageView
+        android:id="@+id/gambartrash"
+        android:layout_width="193dp"
+        android:layout_height="281dp"
+        android:layout_below="@+id/elementGroup1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="107dp"
+        android:src="@drawable/img_welcome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambartrash"
+        android:text="@string/appname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/txtnameApp"
+        android:alpha="0"
+        tools:alpha="100"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnameApp"
+        android:text="@string/splash1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:id="@+id/txtsplash1"
+        android:alpha="0"
+        tools:alpha="100"/>
+
+    <TextView
+        android:id="@+id/txtsplash2"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtsplash1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-1dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/splash2"
+        android:textColor="@color/black"
+        android:alpha="0"
+        tools:alpha="100"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtsplash2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:elevation="10dp"
+        android:alpha="0"
+        tools:alpha="100"
+        />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/btn_shape"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:elevation="10dp"
+        android:onClick="moveActivityRegister"
+        android:alpha="0"
+        tools:alpha="100"/>
+
+    <ImageView
+        android:id="@+id/elementGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/group2"
+        />
+
+
+</RelativeLayout>

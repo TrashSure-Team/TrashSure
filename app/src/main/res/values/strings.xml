@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">TrashSure App</string>
+    <string name="splash1">Latest Technology for Waste Identification !</string>
+    <string name="splash2">a mobile application that uses image recognition technology to identify types of waste. By taking a photo of the waste you want to identify, this application provides information about the type of waste, helping users dispose of waste in a more appropriate and environmentally friendly way.</string>
+    <string name="appname">TRASHSURE</string>
+    <string name="login">Login</string>
+    <string name="register">REGISTER</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="create_your_pasword">Create Your Pasword</string>
+    <string name="invitation">Join our amazing community. by filling in the column below !</string>
+    <string name="welcome_trasher">Welcome TRASHER!</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="to_your_account">to your account</string>
+    <string name="dont_have_an_account">Dont Have an account ?</string>
+    <string name="sign_up_for_free">Sign up for free</string>
 </resources>
