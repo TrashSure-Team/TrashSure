@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.LoginActivity">
+    tools:context=".ui.login.LoginActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -91,7 +91,7 @@
         android:padding="20dp">
 
         <EditText
-            android:id="@+id/L.txtemail"
+            android:id="@+id/LoginEmail"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/btn_shape"
@@ -102,22 +102,30 @@
             android:backgroundTint="@color/white"
             tools:ignore="RtlSymmetry" />
 
-        <EditText
-            android:id="@+id/R.txtpassword"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/btn_shape"
-            android:hint="@string/enter_your_password"
-            android:fontFamily="@font/poppins_regular"
-            android:paddingStart="20dp"
-            android:textSize="15sp"
-            android:backgroundTint="@color/white"
-            tools:ignore="RtlSymmetry" />
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/LoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_shape"
+                android:hint="@string/enter_your_password"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="20dp"
+                android:textSize="15sp"
+                android:backgroundTint="@color/white"
+                android:inputType="textPassword"
+                tools:ignore="RtlSymmetry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
     </LinearLayout>
 
     <Button
-        android:id="@+id/L.buttonLogin"
+        android:id="@+id/LoginButtonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
@@ -135,7 +143,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/L.buttonLogin"
+        android:layout_below="@+id/LoginButtonLogin"
         android:layout_marginTop="20dp"
         android:gravity="center"
         >

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "321062608199",
+    "project_id": "trashscan-404609",
+    "storage_bucket": "trashscan-404609.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321062608199:android:14c31d7428ad9e96774062",
+        "android_client_info": {
+          "package_name": "com.example.trashsure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321062608199-vpu4dmpd16d67s6tc4n8hj5nlvue3nu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgVwww7FDvy4qWTiLVxpYGpKsGJn4oNcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321062608199-vpu4dmpd16d67s6tc4n8hj5nlvue3nu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321062608199:android:dbfdb2f1c33f7709774062",
+        "android_client_info": {
+          "package_name": "com.example.trashsureapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321062608199-vpu4dmpd16d67s6tc4n8hj5nlvue3nu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgVwww7FDvy4qWTiLVxpYGpKsGJn4oNcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321062608199-vpu4dmpd16d67s6tc4n8hj5nlvue3nu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

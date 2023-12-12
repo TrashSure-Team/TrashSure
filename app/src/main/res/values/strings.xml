@@ -17,4 +17,9 @@
     <string name="to_your_account">to your account</string>
     <string name="dont_have_an_account">Dont Have an account ?</string>
     <string name="sign_up_for_free">Sign up for free</string>
+    <string name="enter_your_full_name">Enter Your Full Name</string>
+    <string name="hello_trasher">Hello TRASHER</string>
+    <string name="name_user">Name User</string>
+    <string name="logout">Logout</string>
+    <string name="reenter_password">Reenter Password</string>
 </resources>

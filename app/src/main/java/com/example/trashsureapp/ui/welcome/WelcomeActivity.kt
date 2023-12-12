@@ -1,4 +1,4 @@
-package com.example.trashsureapp.ui
+package com.example.trashsureapp.ui.welcome
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
@@ -11,6 +11,9 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import com.example.trashsureapp.R
 import com.example.trashsureapp.databinding.ActivityWelcomeBinding
+import com.example.trashsureapp.ui.login.LoginActivity
+import com.example.trashsureapp.ui.register.RegisterActivity
+import com.example.trashsureapp.ui.register.RegisterUserActivity
 
 
 class WelcomeActivity : AppCompatActivity() {
