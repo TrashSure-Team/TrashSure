@@ -39,6 +39,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        mlModelBinding = true
     }
 }
 
@@ -61,4 +62,10 @@ dependencies {
     //Modul Auth Firebase
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.github.bumptech.glide:glide:4.12.0")
+
+    //ML
+    implementation("org.tensorflow:tensorflow-lite-support:0.1.0")
+    implementation("org.tensorflow:tensorflow-lite-metadata:0.1.0")
+    implementation("org.tensorflow:tensorflow-lite-gpu:2.3.0")
+    implementation("org.tensorflow:tensorflow-lite-support:0.1.0-rc1")
 }

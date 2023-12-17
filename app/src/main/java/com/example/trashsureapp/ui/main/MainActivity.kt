@@ -3,10 +3,12 @@ package com.example.trashsureapp.ui.main
 import android.util.Log
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.trashsureapp.R
+import com.example.trashsureapp.feature.classification.ClassificationActivity
 import com.example.trashsureapp.ui.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 
@@ -16,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var fullNameUser : TextView
     lateinit var emailUser :TextView
     lateinit var btnLogout :ImageView
+    lateinit var btnClassification:ImageView
 
     val firebaseAuth = FirebaseAuth.getInstance()
     val mUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -26,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         fullNameUser=findViewById(R.id.fullnameuser)
         emailUser=findViewById(R.id.emailuser)
         btnLogout=findViewById(R.id.btnLogoutDashboard)
+        btnClassification=findViewById(R.id.btnClassification)
 
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser!=null){
@@ -37,8 +41,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnLogout.setOnClickListener {
-            firebaseAuth.signOut()
             startActivity(Intent(this,LoginActivity::class.java))
+            finish()
+        }
+
+        btnClassification.setOnClickListener {
+            startActivity(Intent(this, ClassificationActivity::class.java))
             finish()
         }
 
