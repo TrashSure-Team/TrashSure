@@ -13,7 +13,6 @@ import com.example.trashsureapp.R
 import com.example.trashsureapp.databinding.ActivityWelcomeBinding
 import com.example.trashsureapp.ui.login.LoginActivity
 import com.example.trashsureapp.ui.register.RegisterActivity
-import com.example.trashsureapp.ui.register.RegisterUserActivity
 
 
 class WelcomeActivity : AppCompatActivity() {

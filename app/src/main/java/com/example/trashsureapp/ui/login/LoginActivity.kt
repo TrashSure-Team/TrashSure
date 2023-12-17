@@ -10,13 +10,10 @@ import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import com.example.trashsureapp.R
 import com.example.trashsureapp.databinding.ActivityLoginBinding
-import com.example.trashsureapp.databinding.ActivityRegisterBinding
-import com.example.trashsureapp.ui.dashboard.DashboardActivity
+import com.example.trashsureapp.ui.main.MainActivity
 import com.example.trashsureapp.ui.register.RegisterActivity
-import com.example.trashsureapp.ui.register.RegisterUserActivity
 import com.example.trashsureapp.ui.welcome.WelcomeActivity
 import com.google.firebase.auth.FirebaseAuth
-import org.checkerframework.checker.units.qual.Length
 
 
 class LoginActivity : AppCompatActivity() {
@@ -32,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (firebaseAuth.currentUser != null) {
-            startActivity(Intent(this, DashboardActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 
@@ -74,7 +71,7 @@ class LoginActivity : AppCompatActivity() {
         progressDialog.show()
         firebaseAuth.signInWithEmailAndPassword(email,password)
             .addOnSuccessListener {
-                val intent = Intent(this, DashboardActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                 startActivity(intent)
                 finish()

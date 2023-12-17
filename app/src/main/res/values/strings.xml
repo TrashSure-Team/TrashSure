@@ -22,4 +22,18 @@
     <string name="name_user">Name User</string>
     <string name="logout">Logout</string>
     <string name="reenter_password">Reenter Password</string>
+    <string name="email">email</string>
+    <string name="exchange">Exchange</string>
+    <string name="classification">Classification</string>
+    <string name="detection">Detection</string>
+    <string name="do_you_have_trash_to">Do you have trash to</string>
+    <string name="explore_your_trash">Explore your trash!</string>
+    <string name="scan">Scan ?</string>
+    <string name="title">Title</string>
+    <string name="insight_for_you">Insight for you</string>
+    <string name="keep_exploring_knowledge">Keep Exploring Knowledge !</string>
+    <string name="with_trashsure">With Trashsure !</string>
+    <string name="home">Home</string>
+    <string name="nama_user">Nama User</string>
+    <string name="hi">Hi ,</string>
 </resources>

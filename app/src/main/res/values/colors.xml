@@ -5,5 +5,9 @@
     <color name="background">#F5F5F5</color>
     <color name="primaryColor">#96EFFF</color>
     <color name="secondaryColor">#5FBDFF</color>
+    <color name="inboxFitur">#135583</color>
+    <color name="red">#FE0000</color>
+    <color name="populer">#4A55A2</color>
+
 
 </resources>

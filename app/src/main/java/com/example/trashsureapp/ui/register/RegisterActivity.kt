@@ -11,7 +11,7 @@ import android.widget.Toast.LENGTH_SHORT
 import com.example.trashsureapp.databinding.ActivityRegisterBinding
 import com.example.trashsureapp.ui.login.LoginActivity
 import com.example.trashsureapp.R
-import com.example.trashsureapp.ui.dashboard.DashboardActivity
+import com.example.trashsureapp.ui.main.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.userProfileChangeRequest
 
@@ -31,7 +31,7 @@ class RegisterActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (firebaseAuth.currentUser != null) {
-            startActivity(Intent(this, DashboardActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 
@@ -88,7 +88,7 @@ class RegisterActivity : AppCompatActivity() {
                     user!!.updateProfile(userUpdateProfile)
                         .addOnCompleteListener() {
                             progressDialog.dismiss()
-                            startActivity(Intent(this,DashboardActivity::class.java))
+                            startActivity(Intent(this,MainActivity::class.java))
                         }
                         .addOnFailureListener{error2->
                             Toast.makeText(this,error2.localizedMessage, LENGTH_SHORT).show()
