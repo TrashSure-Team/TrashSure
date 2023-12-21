@@ -1,5 +1,6 @@
 package com.example.trashsureapp.feature.classification
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
@@ -35,6 +36,7 @@ class ClassificationActivity : AppCompatActivity() {
         Model.newInstance(this)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_classification)
@@ -80,6 +82,8 @@ class ClassificationActivity : AppCompatActivity() {
             // Display the predicted label
             val maxIdx = getMaxIndex(outputFeature0.floatArray)
             result.text = "Predicted Label: ${labels[maxIdx]}"
+
+            //
         }
     }
 

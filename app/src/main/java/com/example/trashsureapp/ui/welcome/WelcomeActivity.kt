@@ -12,11 +12,21 @@ import android.view.WindowManager
 import com.example.trashsureapp.R
 import com.example.trashsureapp.databinding.ActivityWelcomeBinding
 import com.example.trashsureapp.ui.login.LoginActivity
+import com.example.trashsureapp.ui.main.MainActivity
 import com.example.trashsureapp.ui.register.RegisterActivity
+import com.google.firebase.auth.FirebaseAuth
 
 
 class WelcomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWelcomeBinding
+    var firebaseAuth = FirebaseAuth.getInstance()
+
+    override fun onStart() {
+        super.onStart()
+        if (firebaseAuth.currentUser != null) {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
@@ -28,10 +38,10 @@ class WelcomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.buttonRegister.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
-        }
+//        binding.buttonRegister.setOnClickListener {
+//            val intent = Intent(this, RegisterActivity::class.java)
+//            startActivity(intent)
+//        }
         setupView()
         playAnimation()
 
@@ -57,16 +67,16 @@ class WelcomeActivity : AppCompatActivity() {
         }.start()
 
         val login = ObjectAnimator.ofFloat(binding.buttonLogin, View.ALPHA, 1f).setDuration(100)
-        val register = ObjectAnimator.ofFloat(binding.buttonRegister, View.ALPHA, 1f).setDuration(100)
+//        val register = ObjectAnimator.ofFloat(binding.buttonRegister, View.ALPHA, 1f).setDuration(100)
         val title = ObjectAnimator.ofFloat(binding.txtnameApp, View.ALPHA, 1f).setDuration(100)
         val title2 =ObjectAnimator.ofFloat(binding.txtsplash1,View.ALPHA,1f).setDuration(100)
-        val desc = ObjectAnimator.ofFloat(binding.txtsplash2, View.ALPHA, 1f).setDuration(100)
+//        val desc = ObjectAnimator.ofFloat(binding.txtsplash2, View.ALPHA, 1f).setDuration(100)
 
         val together = AnimatorSet().apply {
-            playTogether(login, register)
+            playTogether(login)
         }
         AnimatorSet().apply {
-            playSequentially(title, title2,desc, together)
+            playSequentially(title, title2, together)
             start()
         }
     }

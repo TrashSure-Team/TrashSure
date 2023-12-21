@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".feature.classification.ClassificationActivity">
+
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="198dp"
+        android:layout_width="170dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
-        android:text="Take Photo"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/take_photo"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -23,12 +25,13 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="198dp"
+        android:layout_width="170dp"
         android:layout_height="60dp"
         android:layout_marginBottom="140dp"
-        android:text="Choose Photo"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/choose_photo"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -36,11 +39,12 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="198dp"
+        android:layout_width="170dp"
         android:layout_height="60dp"
-        android:text="Predict"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/predict"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -50,9 +54,9 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="272dp"
-        android:layout_height="285dp"
-        android:layout_marginTop="76dp"
+        android:layout_width="263dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="96dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -63,11 +67,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="Result"
-        android:textSize="25dp"
+        android:text="@string/result"
+        android:textSize="25sp"
+        android:fontFamily="@font/poppins_semibold"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/group2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

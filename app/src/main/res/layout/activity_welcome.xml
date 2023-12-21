@@ -13,17 +13,16 @@
         android:id="@+id/elementGroup1"
      />
 
-
     <ImageView
         android:id="@+id/gambartrash"
-        android:layout_width="193dp"
-        android:layout_height="281dp"
+        android:layout_width="251dp"
+        android:layout_height="242dp"
         android:layout_below="@+id/elementGroup1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="109dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="107dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="79dp"
         android:src="@drawable/img_welcome" />
 
     <TextView
@@ -32,7 +31,7 @@
         android:layout_below="@+id/gambartrash"
         android:text="@string/appname"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_extrabold"
         android:textSize="18sp"
         android:textColor="@color/black"
@@ -41,69 +40,37 @@
         tools:alpha="100"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txtsplash1"
+        android:layout_width="301dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtnameApp"
-        android:text="@string/splash1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="0dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:textSize="15sp"
-        android:textColor="@color/black"
-        android:id="@+id/txtsplash1"
-        android:alpha="0"
-        tools:alpha="100"/>
-
-    <TextView
-        android:id="@+id/txtsplash2"
-        android:layout_width="396dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtsplash1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="26dp"
+        android:layout_centerInParent="true"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="-1dp"
-        android:fontFamily="@font/poppins_regular"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="@string/splash2"
-        android:textColor="@color/black"
         android:alpha="0"
-        tools:alpha="100"/>
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/helping_people_identify_types_of_trash_and_dispose_in_a_more_appropriate_and_environmentally_friendly_way"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:alpha="100" />
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtsplash2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_below="@+id/txtsplash1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="109dp"
+        android:alpha="0"
         android:background="@drawable/btn_shape"
+        android:elevation="10dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="@string/login"
+        android:text="@string/let_s_get_started"
         android:textColor="@color/black"
         android:textSize="13sp"
-        android:elevation="10dp"
-        android:alpha="0"
-        tools:alpha="100"
-        />
-
-    <Button
-        android:id="@+id/buttonRegister"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="7dp"
-        android:background="@drawable/btn_shape"
-        android:text="@string/register"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        android:fontFamily="@font/poppins_semibold"
-        android:elevation="10dp"
-        android:onClick="moveActivityRegister"
-        android:alpha="0"
-        tools:alpha="100"/>
+        tools:alpha="100" />
 
     <ImageView
         android:id="@+id/elementGroup2"
@@ -117,6 +84,21 @@
         android:layout_marginBottom="0dp"
         android:src="@drawable/group2"
         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="255dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="102dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/welcome"
+        android:textColor="@color/secondaryColor"
+        android:textSize="40sp" />
 
 
 </RelativeLayout>
