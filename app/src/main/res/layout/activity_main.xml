@@ -1,18 +1,391 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
+
+    <ImageView
+        android:id="@+id/BackgroundProfil"
+        android:layout_width="415dp"
+        android:layout_height="281dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="-4dp"
+        android:src="@drawable/bluedrop" />
+
+    <ImageView
+        android:id="@+id/imgProfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="347dp"
+        android:layout_marginBottom="675dp"
+        android:src="@drawable/btnprofil" />
 
     <TextView
+        android:id="@+id/txtHi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="694dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/hi" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/fullnameuser"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/txtHi"
+        android:layout_alignBottom="@+id/txtHi"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_toEndOf="@+id/txtHi"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/nama_user" />
+
+    <ImageView
+        android:id="@+id/btnLogoutDashboard"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/fullnameuser"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/btnlogout" />
+
+    <TextView
+        android:id="@+id/Doyouhave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="604dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/do_you_have_trash_to"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Doyouhave"
+        android:layout_alignBottom="@+id/Doyouhave"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/Doyouhave"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/scan"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/searchbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignStart="@+id/Doyouhave"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignBottom="@+id/BackgroundProfil"
+        android:layout_marginStart="-33dp"
+        android:layout_marginEnd="-36dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/btn_shape"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/search"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/explore_your_trash"
+        android:paddingStart="20dp"
+        android:textSize="15sp"
+        tools:ignore="RtlSymmetry" />
+
+    <LinearLayout
+        android:id="@+id/fitureaplikasi"
+        android:layout_width="355dp"
+        android:layout_height="95dp"
+        android:layout_below="@+id/BackgroundProfil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/box_fitur"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/in_box_fitur"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnObject"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/object" />
+
+            <TextView
+                android:id="@+id/txtObject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/detection"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/in_box_fitur"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnClassification"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/classification" />
+
+            <TextView
+                android:id="@+id/textClassification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/classification"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/in_box_fitur"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnExchange"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/maps" />
+
+            <TextView
+                android:id="@+id/textExchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/exchange"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Insight"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fitureaplikasi"
+        android:layout_alignStart="@+id/fitureaplikasi"
+        android:layout_alignEnd="@+id/fitureaplikasi"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="-10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/insight_for_you"
+        android:textColor="@color/populer"
+        android:textSize="18sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/boxinsight"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_below="@+id/Insight"
+        android:layout_alignStart="@+id/Insight"
+        android:layout_alignEnd="@+id/Insight"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="-2dp"
+        android:background="@drawable/in_box_insight">
+
+        <ImageView
+            android:id="@+id/imgInsight"
+            android:layout_width="102dp"
+            android:layout_height="122dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/explore"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/keep_exploring_knowledge"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toEndOf="@+id/imgInsight"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/withTrashsure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="108dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/with_trashsure"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Slogan"
+            app:layout_constraintVertical_bias="0.15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/emailuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/email"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/boxinsight2"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_below="@+id/boxinsight"
+        android:layout_alignStart="@+id/boxinsight"
+        android:layout_alignEnd="@+id/boxinsight"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/in_box_insight">
+
+        <ImageView
+            android:id="@+id/imgInsightEnvironment"
+            android:layout_width="102dp"
+            android:layout_height="122dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/baca"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/SloganEnvironment"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/trashsure_for_better_environment"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.684"
+            app:layout_constraintStart_toEndOf="@+id/imgInsightEnvironment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="-1dp"
+        android:background="#C4D3FA"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnProfileHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/baseline_person_24" />
+
+        <ImageView
+            android:id="@+id/btnHomeHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/baseline_home_24" />
+
+        <ImageView
+            android:id="@+id/btnSettingHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/baseline_settings_24" />
+    </LinearLayout>
+
+
+</RelativeLayout>

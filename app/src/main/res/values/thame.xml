@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme for Material3 -->
+    <style name="Base.Theme.MyGoogleMaps" parent="Theme.Material3.DayNight">
+        <!-- Your customizations here -->
+    </style>
+
+</resources>

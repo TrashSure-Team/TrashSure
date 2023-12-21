@@ -1,0 +1,7 @@
+Glass
+Medical
+Metal
+Paper
+Plastic
+Textiles
+e-Waste
